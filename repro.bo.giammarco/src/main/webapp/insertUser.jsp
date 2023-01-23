@@ -1,0 +1,35 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<%@include file="./autentication.jsp"%>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert User</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+	<%@include file="./header.jsp"%>
+</head>
+<body>
+<div class="container">
+
+	<form method="post" action="./InsertRoleServlet"
+		class="autentication">
+		<h1>Inserimento Utente</h1>
+		<input type=text id="email" placeholder="Email" name="email_input"
+			required> <input type="text" id="password"
+			placeholder="Password" name="password_input" maxlength="50" required>
+		<input type="text" id="firstname" placeholder="Firstname"
+			name="firstname_input" required> <input type="text"
+			id="lastname" placeholder="Lastname" name="lastname_input"
+			maxlength="50" required> <input type="date" id="birthdate"
+			placeholder="Birthdate" name="birthdate_input" required>
+		<!--             <input type="number" id="role" placeholder="Role" name="role_input" required> -->
+		<button type="submit" name="register" class="btn btn-warning">Inserisci</button>
+	</form>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+</body>
+</html>
